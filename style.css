@@ -12,6 +12,11 @@
     font-family:Tahoma;
 }
 
+.content{
+    background-color: rgba(137, 43, 226, 0.233);
+    border-radius: 3rem;
+    margin: 2rem;
+}
 .tab{
     gap:1.5rem;
     padding: 1.5rem;

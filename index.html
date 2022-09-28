@@ -11,36 +11,36 @@
     <div class="heading">
         <h1>Javascript and Html Forms</h1>
     </div>
-    <form class="content" method="get">
+    <form class="content" method="post" id="userForm">
         <div class="tab">
-            <div class="labels">
-                <label>First</label>
-                <input type="text" placeholder="First Name"></input>
+            <div class="labels" data-errormsgs="">
+                <label for="input-first">First</label>
+                <input type="text" id="input-first" placeholder="First Name"></input>
             </div>
-            <div class="labels">
-                <label>Password</label>
-                <input type="password" placeholder="password"></input>
+            <div class="labels" data-errormsgs="">
+                <label for="input-password" >Password</label>
+                <input type="password" id="input-password" placeholder="password" required tabindex="2"></input>
             </div>
-            <div class="labels">
-                <label>Email</label>
-                <input type="email" placeholder="E-mai Address"></input>
+            <div class="labels" data-errormsgs="">
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" placeholder="E-mai Address" tabindex="3"></input>
             </div>
-            <div class="labels">
-                <label>Age</label>
-                <select name="Age Bracket">
+            <div class="labels" data-errormsgs="">
+                <label for="input-age">Age</label>
+                <select id="input-age" name="Age Bracket" tabindex="4">
                     <option value="Under 10">Under 10</option>
                     <option value="Under 20">Under 20</option>
                     <option value="Under 30">Under 30</option>
                     <option value="Under 40">Under 40</option>
                 </select>
             </div>
-            <div class="labels">
-                <label>Alive</label>
-                <input type="checkbox" value="I am alive">
+            <div class="labels" data-errormsgs="">
+                <label for="checkbox">Alive</label>
+                <input type="checkbox" id="alive" tab-idex="5" checked>
             </div>
             <div class="labels-btn">
-                <button type="reset">Reset</button>
-                <button type="submit">Send</button>
+                <button type="reset" id="reset-button">Reset</button>
+                <button type="submit" id="submit-button">Submit</button>
             </div>
         </div>   
 
